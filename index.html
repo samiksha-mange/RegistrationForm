@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      <b><u>Registration Form</u></b>
+    </h1>
+
+    <form>
+      <div class="container">
+        <p><span> * </span> Required fields</p>
+        <!-- Get Started Section -->
+        <div class="form-section">
+          <h2>Get Started With Monster</h2>
+          <div class="row">
+            <label for="email"
+              ><span class="required">*</span> Email Address:</label
+            >
+            <input type="email" id="email" required />
+          </div>
+          <div class="row">
+            <label for="first-name"
+              ><span class="required">*</span> First Name:</label
+            >
+            <input type="text" id="first-name" required />
+          </div>
+          <div class="row">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" />
+          </div>
+          <div class="row">
+            <label for="username"
+              ><span class="required">*</span> Desired Username:</label
+            >
+            <input type="text" id="username" required />
+          </div>
+          <div class="row">
+            <label for="password"
+              ><span class="required">*</span> Choose a Password:</label
+            >
+            <input type="password" id="password" required />
+          </div>
+          <div class="row">
+            <label for="re-password"
+              ><span class="required">*</span> Re-enter Password:</label
+            >
+            <input type="password" id="re-password" required />
+          </div>
+        </div>
+
+        <!-- Personal Details Section -->
+        <div class="form-section">
+          <h2>Personal Details</h2>
+          <div class="row">
+            <label for="current-location"
+              ><span class="required">*</span> Current Location:</label
+            >
+            <select id="job-location" name="job-location" size="4">
+              <option value="ahmedabad">Ahmedabad</option>
+              <option value="bangalore">Bangalore</option>
+              <option value="bangalore">Pune</option>
+              <option value="bangalore">Nagpur</option>
+              <option value="Mumbai">Mumbai</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" placeholder="91-" />
+          </div>
+          <div class="row">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="91-" />
+          </div>
+          <div class="row">
+            <label for="job-location">Preferred Job Location:</label>
+            <select id="job-location" class="scroll-select">
+              <option value="Anywhere">Anywhere</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Pune">Pune</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="nationality"
+              ><span class="required">*</span> Nationality:</label
+            >
+            <select id="nationality">
+              <option value="">- Select -</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+            </select>
+          </div>
+          <div class="row2">
+            <label><span class="required">*</span> Gender:</label>
+
+            <input type="radio" name="gender" value="Male" /> Male
+            <input type="radio" name="gender" value="Female" /> Female
+          </div>
+        </div>
+
+        <!-- Professional Details Section -->
+        <div class="form-section1">
+          <h2>Professional Details</h2>
+          <div class="row">
+            <label for="experience"
+              ><span class="required">*</span> Total Experience:</label
+            >
+            <div class="row3">
+              <select id="experience-years">
+                <option value="">- Select -</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <label for="experience-years">Years</label>
+              <select id="experience-months">
+                <option value="">- Select -</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <label for="experience-years">Months</label>
+            </div>
+          </div>
+          <div class="row">
+            <label for="industry">Current / Preferred Industry:</label>
+            <select id="industry" name="industry" size="7">
+              <option value="">- Select -</option>
+              <option value="any">Any</option>
+              <option value="automotive">Automotive/ Andillaries</option>
+              <option value="banking">Banking/ Financial Services</option>
+              <option value="biotech">Bio Technology & Life Sciences</option>
+              <option value="chemicals">Chemicals/ Plastic/ Rubber</option>
+              <option value="construction">Construction</option>
+              <option value="consumer-goods">Consumer Goods/ FMCG</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="function">Function:</label>
+            <select id="function" name="function" size="10">
+              <option value="">- Select -</option>
+              <option value="admin">Admin/Secretarial</option>
+              <option value="customer-service">
+                Customer Service/ Call Centre/ BPO
+              </option>
+              <option value="finance">Finance & Accounts</option>
+              <option value="hr">Human Resources</option>
+              <option value="it">IT</option>
+              <option value="legal">Legal</option>
+              <option value="marketing">Marketing & Communications</option>
+              <option value="purchase">
+                Purchase/ Logistics/ Supply Chain
+              </option>
+              <option value="sales">Sales/ Business Development</option>
+              <option value="advertising">
+                Advertising/Entertainment/Media
+              </option>
+              <option value="banking-insurance">
+                Banking, Insurance & Financial Services
+              </option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="key-skills">Key Skills:</label>
+            <textarea id="key-skills" rows="4"></textarea>
+          </div>
+        </div>
+
+        <!-- Email Subscription Section -->
+        <div class="form-section1">
+          <h2>Email Subscription</h2>
+          <div class="row1">
+            <label
+              ><input type="checkbox" class="checkbox" /> Monster Products &
+              Newsletters</label
+            >
+          </div>
+          <div class="row1">
+            <label
+              ><input type="checkbox" class="checkbox" /> Offers &
+              Promotions</label
+            >
+          </div>
+          <div class="row1">
+            <label
+              ><input type="checkbox" class="checkbox" /> Receive Matching Jobs
+              Through SMS</label
+            >
+          </div>
+        </div>
+
+        <!-- Submit Section -->
+        <div class="submit-row">
+          <button type="button" onclick="validateForm()">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

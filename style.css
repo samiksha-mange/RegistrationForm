@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #566831;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+  text-align: right;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.container p span {
+  color: red;
+}
+
+h2 {
+  background-color: #89a54e;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  width: 28%;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.row label {
+  width: 30%;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.row2 input {
+  margin-bottom: 20px;
+}
+
+.row2 label {
+  width: 30%;
+  font-weight: bold;
+  margin-left: 22%;
+  text-align: right;
+}
+
+.row1 label {
+  margin-left: 31%;
+  text-align: left;
+}
+
+.row1 {
+  margin-bottom: 10px;
+}
+
+.row3 select {
+  width: 100px;
+}
+
+.row3 label {
+  font-weight: normal;
+}
+
+.row input,
+.row select,
+.row textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.required {
+  color: red;
+}
+
+.scroll-select {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.submit-row {
+  text-align: left;
+}
+
+.submit-row button {
+  background-color: #e47922;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 31%;
+}
+
+.submit-row button:hover {
+  background-color: #d3691d;
+}
+
+@media (max-width: 600px) {
+  .row label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  h2 {
+    background-color: #89a54e;
+    color: white;
+    padding: 4px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .row1 label {
+    margin-left: 0;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .row2 input {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .row2 label {
+    font-weight: bold;
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .row3 select {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .row input,
+  .row textarea {
+    width: 40%;
+  }
+
+  .submit-row {
+    margin-left: 10%;
+  }
+}
